@@ -1,0 +1,35 @@
+<!--DOC TYPE HTML -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA APOD</title>
+    <link rel="icon" type="image/png" href="https://s2.googleusercontent.com/s2/favicons?domain=www.nasa.gov">
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <div class="loader hidden">
+        <img src="rocket.gif" alt="Rocket Animation Loader">
+    </div>
+    <div class="container">
+        <div class="navigation-container">
+            <span class="navigation-background"></span>
+            <span class="navigation-items" id="resultsNav">
+                <h3 class="clickable" onclick="updateDOM('favorites')">Favorites</h3>
+                <h3>&nbsp;&nbsp;•&nbsp;&nbsp;</h3>
+                <h3 class="clickable" onclick="getNASApictures()">Load More</h3>
+            </span>
+            <span class="navigation-items hidden" id="favoritesNav">
+            <h3 class="clickable" onclick="getNASApictures()">Load More NASA Images</h3>
+            </span>
+        </div>
+        <div class="images-container">
+    </div>
+    </div>
+    <div class="save-confirmed" hidden>
+        <h2>ADDED</h2>
+    </div>
+    <script src = "script.js"></script>
+</body>
+</html>
